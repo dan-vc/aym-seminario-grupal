@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+}
+
+:root {
+    --primary: #0552A0;
+    --secunday: #2A82DB;
+    --terciary: #8BC1F8;
+
+    --dark: #000000;
+    --white: #FFFFFF;
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav .activado {
+    background-color: var(--secunday);
+    padding: 20px 40px 20px 40px;
+}
+
+nav .desactivado {
+    background-color: var(--primary);
+    padding: 20px 40px 20px 40px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav li {
+    color: var(--white);
+    list-style-type: none
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container {
+    flex: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    background-image: url("../img/inicio/portada.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container .text-1 {
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container .text-2 {
+    color: var(--white);
+    font-family: Montserrat;
+    font-family: 18px;
+    font-weight: 500;
+}
+
+button {
+    width: 136px;
+    height: 36px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary);
+    font-family: Montserrat;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+
+.btn {
+    background-color: var(--primary);
+    border-radius: 12px;
+    font-weight: 500;
+    color: var(--white);
+    display: flex;
+    padding: .5rem 1rem;
+    width: fit-content;
+}
+
+#clientes {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    h2 {
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        strong {
+            color: var(--primary);
+        }
+    }
+
+    .clientes-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+#servicios {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+
+    &>p {
+        margin-bottom: 1rem;
+    }
+
+    .service-card__wrapper {
+        width: 100%;
+        max-width: 1240px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .service-card {
+        padding: 1rem;
+        border-radius: 18px;
+        border: 1px solid #CCD1EE;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        transition: all ease .3s;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            .btn {
+                margin-top: auto;
+                transition: all ease .3s;
+            }
+        }
+
+        &:hover {
+            background: #EF3E42;
+            color: var(--white);
+
+            .btn {
+                background: var(--white);
+                color: #EF3E42;
+            }
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--primary);
+}
+
+footer .links {
+    display: flex;
+    gap: 70px;
+}
+
+footer .links a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer .follow {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .follow p {
+    color: var(--white);
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer .follow .redes {
+    display: flex;
+    gap: 10px;
+}

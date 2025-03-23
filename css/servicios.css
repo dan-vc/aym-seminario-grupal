@@ -107,6 +107,7 @@ button {
 
 .btn {
     background-color: var(--primary);
+    text-decoration: none;
     border-radius: 12px;
     font-weight: 500;
     color: var(--white);
@@ -137,6 +138,10 @@ button {
         justify-content: center;
         flex-wrap: wrap;
         gap: 1rem;
+
+        img{
+            object-fit: contain;
+        }
     }
 }
 

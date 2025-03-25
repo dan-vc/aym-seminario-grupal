@@ -265,3 +265,53 @@ footer .follow .redes{
     display: flex;
     gap: 10px;
 }
+
+
+@media screen and (max-width: 1100px) {
+    .container{
+        padding: 2rem 1.5rem;
+        
+        .text-1{
+            font-size: 24px;
+        }
+
+        .text-2{
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .block-1{
+        padding: 2rem 1.5rem;
+    }
+    
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .block-2 .cuadros {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .block-3{
+        padding: 2rem 1.5rem;
+    }
+
+    .block-3 div {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+}

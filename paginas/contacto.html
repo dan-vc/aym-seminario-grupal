@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A y M</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
+
 <body>
-    PAGINA DE CONTACTO
+    <header>
+        <picture>
+            <img src="../img/inicio/logo.png" alt="">
+        </picture>
+        <nav class="header-mobile">
+            <ul>
+                <li><a class="desactivado" href="/index.html">INICIO</a></li>
+                <li><a class="desactivado" href="/paginas/nosotros.html">NOSOTROS</a></li>
+                <li><a class="desactivado" href="/paginas/servicios.html">SERVICIOS</a></li>
+                <li><a class="desactivado" href="/paginas/proyectos.html">PROYECTOS</a></li>
+                <li><a class="activado" href="/paginas/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </button>
+    </header>
+
+    <div class="container">
+        <p class="text-1">Desarrollamos y gestionamos <br>proyectos para múltiples sectores, <br>ofreciendo soluciones
+            eficientes.</p><br>
+        <p class="text-2">Atendemos diversos sectores, garantizando calidad, tecnología y <br>compromiso en cada
+            proyecto.</p><br>
+        <button>Ver Servicios</button>
+    </div>
+
+
+    <section class="container-formulario">
+        <div class="formulario">
+            <aside class="block-1">
+                <img class="logo" src="../img/inicio/logo.png" alt="Logo">
+                <h2 class="text_4">Conéctate Conmigo</h2>
+                <p class="text_5">Aquí puedes encontrarme.</p>
+
+                <div class="box-icon">
+                    <img src="../img/contacto/telefonoicono.png" alt="Teléfono">
+                    <div>
+                        <h3 class="text_6">CELULAR</h3>
+                        <p class="text_7">+51 986 356 523</p>
+                    </div>
+                </div>
+
+                <div class="box-icon">
+                    <img src="../img/contacto/correoicono.png" alt="Correo">
+                    <div>
+                        <h3 class="text_6">EMAIL</h3>
+                        <p class="text_7">loremipsu@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="box-icon">
+                    <img src="../img/contacto/telegramicono.png" alt="Telegram">
+                    <div>
+                        <h3 class="text_6">TELEGRAM</h3>
+                        <p class="text_7">loremipsu2025</p>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="block-2">
+                <div class="center">
+                    <h2 class="text_8">Hablemos Ahora</h2>
+                    <p class="text_9">Estoy listo para escucharte.</p>
+
+                    <form id="contactForm" action="#">
+                        <input type="text" placeholder="Ingresar Nombre" id="nombre" required><br><br>
+                        <input type="email" placeholder="Ingresar Email" id="email" required><br><br>
+                        <input type="tel" placeholder="Ingresar Celular" id="celular" required><br><br>
+                        <textarea placeholder="Escribir Mensaje" rows="5" cols="40" id="mensaje"
+                            required></textarea><br><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <di class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.861448439738!2d-77.11420709334794!3d-11.833408592760692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d4254960b965%3A0xed4996158a52ca66!2sFundici%C3%B3n!5e0!3m2!1ses-419!2spe!4v1742824600459!5m2!1ses-419!2spe"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div><img src="../img/footer/footer_logo.png" alt=""></div>
+        <div class="links">
+            <div><a href="">INICIO</a></div>
+            <div><a href="">NOSOTROS</a></div>
+            <div><a href="">SERVICIOS</a></div>
+            <div><a href="">PROYECTOS</a></div>
+            <div><a href="">CONTACTO</a></div>
+        </div>
+        <div class="follow">
+            <p>Siguenos en:</p>
+            <div class="redes">
+                <div> <a href=""><img src="../img/footer/facebook.png" alt=""></a>
+                </div>
+                <div> <a href=""><img src="../img/footer/youtube.png" alt=""></a>
+                </div>
+                <div> <a href=""><img src="../img/footer/linkedin-in.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/header.js"></script>
 </body>
+
 </html>

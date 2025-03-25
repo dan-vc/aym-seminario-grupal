@@ -227,3 +227,49 @@ footer .follow .redes{
     display: flex;
     gap: 10px;
 }
+
+
+@media screen and (max-width: 1100px) {
+    .container{
+        padding: 2rem 1.5rem;
+        
+        .text-1{
+            font-size: 24px;
+        }
+
+        .text-2{
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    img{
+        max-width: 100%;
+    }
+
+    .block-2{
+        padding: 2rem 1.5rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contenedor .text-2 {
+        width: 100%;
+    }
+
+    .block-3{
+        padding: 2rem 1.5rem;
+    }
+
+    .block-3 div {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+}

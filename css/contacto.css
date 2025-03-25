@@ -298,6 +298,18 @@ footer .follow .redes {
 }
 
 @media screen and (max-width: 1100px) {
+    .container {
+        padding: 2rem 1.5rem;
+
+        .text-1 {
+            font-size: 24px;
+        }
+
+        .text-2 {
+            font-size: 14px;
+        }
+    }
+
 
     .section1,
     .text_1,
